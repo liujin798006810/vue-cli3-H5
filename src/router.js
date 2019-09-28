@@ -77,7 +77,7 @@ router.beforeEach((to, from, next) => {
             store.commit('updateDirection', 'forward')
         }
     }
-    if (auth) { // 需要登录
+    if (auth) { 
         if (token) {
             next()
         } else {
